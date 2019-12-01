@@ -4,20 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab31050
+namespace SpeedLimit
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i = 10;
-            while (i <= 20)
+            int a = 35;
+            int b = 42;
+            
+            int userANS;
+           
+            Console.WriteLine(" Enter your speed ");
+            userANS = Convert.ToInt32(Console.ReadLine());
+            if (userANS > b)
             {
-                Console.WriteLine(i);
-                i += 1;
+                Console.WriteLine(" SLOW DOWN NOW! ");
 
             }
+            else if (userANS > a)
+            {
+                Console.WriteLine(" Goodjob driving the speed limit ");
+            }
+            else
+            {
+                Console.WriteLine("You need to speed up!");
+            }
+                
             Console.ReadKey();
+
+              
+
+
+
+
+
+
+
+
+
+
+
 
 
 
